@@ -93,6 +93,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar_exercise_activity"
+        android:layout_above="@id/rvExerciseStatus"
         android:gravity="center"
         android:orientation="vertical"
         android:visibility="gone"
@@ -130,7 +131,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/circular_progress_gray"
                 android:indeterminate="false"
-                android:max="10"
+                android:max="30"
                 android:progress="100"
                 android:progressDrawable="@drawable/circular_progress_bar"
                 android:rotation="-90" />
@@ -154,5 +155,12 @@
         </FrameLayout>
     </LinearLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvExerciseStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp" />
 
 </RelativeLayout>

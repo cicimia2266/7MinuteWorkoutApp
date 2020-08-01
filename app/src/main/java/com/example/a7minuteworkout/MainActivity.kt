@@ -16,5 +16,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        llBMI.setOnClickListener {
+            val intent = Intent(this, BMIActivity::class.java)
+            startActivity(intent)
+        }
+
+        llHistory.setOnClickListener {
+            val intent = Intent(this, HistoryActivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }
